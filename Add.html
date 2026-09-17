@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00ffff">
+            <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
+        </svg>
+    </a>
+
+
+    <p class="Text3">Add Password</p>
+
+
+    <div class="container">
+
+        <div class="container1">
+
+            <form>
+
+                <div class="input-group">
+                    <label for="Namesite">Name Site:</label>
+                    <input id="Namesite" class="form" type="text" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="AddressSite">Address Site:</label>
+                    <input id="AddressSite" class="form" type="text">
+                </div>
+
+                <div class="input-group">
+                    <label for="Username">Username Or Email:</label>
+                    <input id="Username" class="form" type="text" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="Password">Password:</label>
+                    <div class="password-input">
+                        <input id="Password" class="form" type="password">
+                        <button type="button" id="showPassword">👁</button>
+                    </div>
+
+                    <div class="password-generator">
+
+                        <div class="generator-header">
+                            <span>Password Generator</span>
+                            <button type="button" id="generateBtn">Generate</button>
+                        </div>
+
+                        <div class="generator-options">
+
+                            <label>
+                                <input type="checkbox" id="uppercase" checked>
+                                Uppercase
+                            </label>
+
+                            <label>
+                                <input type="checkbox" id="numbers" checked>
+                                Numbers
+                            </label>
+
+                            <label>
+                                <input type="checkbox" id="symbols" checked>
+                                Symbols
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <button class="save-btn" type="submit">
+                    Save
+                </button>
+                <p id="message"></p>
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>

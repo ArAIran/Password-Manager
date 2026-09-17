@@ -1,0 +1,304 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    margin-left: 20px;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 22px;
+}
+
+.Text1 {
+    color: aqua;
+    font-size: 100px;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.Text2 {
+    margin: auto;
+    color: aqua;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.Search {
+    width: 600px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid aqua;
+    color: aqua;
+    background-color: black;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 525px;
+}
+
+::placeholder {
+    color: aqua;
+    font-size: 16px;
+}
+
+.Search:focus {
+    border: 3px solid rgb(0, 255, 255);
+    outline: none;
+}
+
+.Add {
+    text-decoration: none;
+    font-size: 22px;
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    padding: 14px;
+    border-radius: 100px;
+    text-align: center;
+    margin-left: 300px;
+    cursor: pointer;
+    border: 2px solid aqua;
+
+}
+
+.Add:hover {
+    color: black;
+    background-color: aqua;
+}
+
+svg {
+    padding: 50px;
+
+}
+
+.Text3 {
+    margin-top: -60px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40vh);
+}
+
+.container1 {
+    display: flex;
+    border-radius: 40px;
+    width: 550px;
+    height: 650px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid aqua;
+    margin-top: 70px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-group {
+    width: 400px;
+    margin-top: 40px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: aqua;
+}
+
+.form {
+    box-sizing: border-box;
+    background-color: black;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    padding: 10px;
+    color: aqua;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.form:focus {
+    border: 2px solid aqua;
+    outline: none;
+}
+
+.password-generator {
+    width: 400px;
+    margin-top: 20px;
+}
+
+.generator-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.generator-header span {
+    color: aqua;
+    font-size: 18px;
+
+}
+
+#generateBtn {
+    background-color: black;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#generateBtn:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.generator-options {
+    display: flex;
+    gap: 25px;
+}
+
+.generator-options label {
+    color: aqua;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.generator-options input {
+    accent-color: aqua;
+    cursor: pointer;
+}
+
+.save-btn {
+
+    background-color: black;
+    color: aqua;
+    border: 1px solid aqua;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.save-btn:hover {
+    color: black;
+    background-color: aqua;
+}
+
+#passwordList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+
+}
+
+.password-card h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.password-card p {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.password-card {
+    width: 350px;
+    min-height: 220px;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    color: aqua;
+}
+
+#message {
+    color: rgb(43, 255, 0);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+#message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#showPassword {
+    background-color: black;
+    color: aqua;
+    font-size: 20px;
+
+}
+
+.password-input {
+    position: relative;
+    width: 100%;
+}
+
+#showPassword {
+    position: absolute;
+    left: 360px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: aqua;
+    cursor: pointer;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.info-row p {
+    margin: 8px 0;
+}
+
+.copy-btn {
+    background-color: black;
+    color: aqua;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: black;
+    color: aqua;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.created-date {
+    text-align: right !important;
+    font-size: 13px;
+    margin-top: -20px !important;
+    margin-bottom: 20px !important;
+}
